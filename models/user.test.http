@@ -1,0 +1,18 @@
+@baseurl = http://localhost:3000/api/v1
+@contentType = application/json
+
+GET {{baseurl}}/users
+Authorization: Bearer 
+
+###
+GET {{baseurl}}/user/1
+Authorization: Bearer eyJhbGOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXRpbjEyMzQiLCJleHAiOjk1ODUxNDY5OTgwNTI0NDgwfQ.Te01h9viSoxDNxtyDPvdt-TPRhUeml2eLUYB894KvUY
+
+###
+POST {{baseurl}}/user/login
+Content-Type: {{contentType}}
+
+{
+    "username": "sutin1234",
+    "password": "1234"
+}
